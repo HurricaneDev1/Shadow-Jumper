@@ -16,7 +16,7 @@ public class Shadow : MonoBehaviour
     [SerializeField]private Animator rightSquare;
     [SerializeField]private ParticleSystem deathParticles;
     [SerializeField]private CinemachineVirtualCamera cinCamera; 
-    [SerializeField]private int deathCounter;
+    public int deathCounter;
     private Player player;
     void Start(){
         rb = GetComponent<Rigidbody2D>();
