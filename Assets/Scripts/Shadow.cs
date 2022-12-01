@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.SceneManagement;
 
 public class Shadow : MonoBehaviour
 {
@@ -29,6 +30,10 @@ public class Shadow : MonoBehaviour
             rb.gravityScale = 0;
             rb.drag = inShadowDrag;
             Move();
+        }
+
+        if(Input.GetKeyDown(KeyCode.R)){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
